@@ -1,0 +1,46 @@
+<%- include('../partials/header') %>
+    <div class="container">
+        <div class="row">
+            <div class="cellphone-container">
+                <div class="movie">
+                    <div class="movie-img"
+                        style="background-image: url(https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg);">
+                    </div>
+                    <div class="text-movie-cont">
+                        <div class="mr-grid">
+                            <div class="col1">
+                                <h1>Interstellar</h1>
+                                <ul class="movie-gen">
+                                    <li>PG-13 /</li>
+                                    <li>2h 49min /</li>
+                                    <li>Adventure, Drama, Sci-Fi,</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mr-grid summary-row">
+                            <div class="col2">
+                                <h5>SUMMARY</h5>
+                            </div>
+                        </div>
+                        <div class="mr-grid">
+                            <div class="col1">
+                                <p class="movie-description">A group of elderly people are giving interviews about
+                                    having
+                                    lived </p>
+                            </div>
+                        </div>
+
+                        <div class="mr-grid action-row row justify-content-around">
+                            <a href="/editmovie/<%= movie._id %>" class="watch-btn col-5 fs-5">
+                                Edit Movie
+                            </a>
+                            <a href="/deletemovie/<%= movie._id %>" class="watch-btn col-5 fs-5">
+                                Delete Movie
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
